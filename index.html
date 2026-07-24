@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Availability and Reservations | Kamakura Chokin Kobo</title>
+    <meta name="description" content="Static English preview of the Kamakura Chokin Kobo reservation form.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Noto+Serif:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="https://kamakura-chokin.com/en/" aria-label="Kamakura Chokin Kobo">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span>Kamakura Chokin Kobo</span>
+      </a>
+    </header>
+
+    <main class="page-reserves">
+      <div class="inner">
+        <div class="page-header">
+          <p class="page-title-en">Reserve</p>
+          <h1>Availability and Reservations</h1>
+          <p class="page-description">
+            Check availability and make a reservation for Kamakura Chokin Kobo here.
+            Select a location, then choose your preferred course, date, and enter the required details.
+          </p>
+        </div>
+      </div>
+
+      <form class="reserve-form" action="#" method="post">
+        <section class="section section01">
+          <div class="section-label"><div class="inner">Select a location</div></div>
+          <div class="inner">
+            <div class="shops" role="radiogroup" aria-label="Location">
+              <button class="shop active" type="button" data-shop="kamakura" aria-pressed="true">
+                <img class="shop-image" src="./assets/shop1.jpg" alt="">
+                <span class="shop-info">
+                  <span class="shop-title">Kamakura</span>
+                  <span class="shop-desc">Kamakura Chokin Kobo Main Store<br>14-29 Onarimachi, Kamakura, Kanagawa<br>3-minute walk from Kamakura Station West Exit</span>
+                </span>
+                <span class="radio-dot" aria-hidden="true"></span>
+              </button>
+
+              <button class="shop" type="button" data-shop="yokohama" aria-pressed="false">
+                <img class="shop-image" src="./assets/shop3.jpg" alt="">
+                <span class="shop-info">
+                  <span class="shop-title">Yokohama Motomachi</span>
+                  <span class="shop-desc">Kamakura Chokin Kobo Yokohama Motomachi<br>4-163-3 Motomachi 2F, Naka-ku, Yokohama, Kanagawa<br>Stairs only, no elevator<br>5-minute walk from Motomachi-Chukagai Station Exit 5</span>
+                </span>
+                <span class="radio-dot" aria-hidden="true"></span>
+              </button>
+
+              <button class="shop" type="button" data-shop="osaka" aria-pressed="false">
+                <img class="shop-image" src="./assets/shop2.jpg" alt="">
+                <span class="shop-info">
+                  <span class="shop-title">Osaka Nakazakicho</span>
+                  <span class="shop-desc">Kamakura Chokin Kobo Osaka Nakazakicho<br>2-6-19 Nakazaki, Kita-ku, Osaka<br>4-minute walk from Nakazakicho Station</span>
+                </span>
+                <span class="radio-dot" aria-hidden="true"></span>
+              </button>
+
+              <button class="shop shop-kuramae" type="button" data-shop="kuramae" aria-pressed="false">
+                <span class="campaign-ribbon">Opening campaign location</span>
+                <span class="campaign-case">Up to 15% OFF + ring case</span>
+                <span class="campaign-period">August 3, 2026 to September 30, 2026<br>The discount applies to the date you make your ring.</span>
+                <img class="shop-image" src="./assets/shop4.jpg" alt="">
+                <span class="shop-info">
+                  <span class="shop-note">Opening August 3, 2026</span>
+                  <span class="shop-title">Tokyo Kuramae</span>
+                  <span class="shop-desc">Kamakura Chokin Kobo Tokyo Kuramae<br>1-4-19 Komagata, Taito-ku, Tokyo<br>4-minute walk from Kuramae Station Exit A6 on the Toei Oedo Line</span>
+                </span>
+                <span class="radio-dot" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section02" id="section02">
+          <div class="section-label"><div class="inner">Select a course and date</div></div>
+          <div class="inner form-grid">
+            <div class="field">
+              <label class="label" for="course"><span class="tag required">Required</span> Course</label>
+              <select id="course" name="course_id">
+                <option value="">Select a course</option>
+                <option value="three" selected>Handmade Wedding and Engagement Ring Course (3 rings)</option>
+                <option value="wedding">Handmade Wedding Ring Course</option>
+                <option value="engagement">Handmade Engagement Ring Course</option>
+                <option value="diamond">Diamond Proposal Course</option>
+                <option value="anniversary">Handmade Anniversary Ring Course</option>
+                <option value="pair">Handmade Pair Ring Course</option>
+                <option value="consultation">Wedding and Engagement Ring Consultation</option>
+              </select>
+            </div>
+
+            <div class="course-description" id="courseDescription">
+              <strong>Handmade Wedding and Engagement Ring Course (3 rings)</strong>
+              <p>You will make three Pt900 platinum or K18 gold rings on your reservation date.</p>
+              <p>Silver cannot be selected for this course.</p>
+              <p>If you would like to visit for a consultation only, please select the Wedding and Engagement Ring Consultation course.</p>
+            </div>
+
+            <div class="field">
+              <label class="label" for="reserve-date"><span class="tag required">Required</span> Date and time</label>
+              <input id="reserve-date" name="reserve_datetime_display" type="text" placeholder="Please select a reservation date and time." readonly>
+            </div>
+
+            <div class="calendar" aria-label="Reservation calendar preview">
+              <div class="calendar-head">
+                <strong>July 2026</strong>
+                <div class="calendar-nav" aria-hidden="true">
+                  <span>Today</span><span>&lt;</span><span>&gt;</span>
+                </div>
+              </div>
+              <div class="calendar-grid">
+                <div class="dow">Mon</div><div class="dow">Tue</div><div class="dow">Wed</div><div class="dow">Thu</div><div class="dow">Fri</div><div class="dow sat">Sat</div><div class="dow sun">Sun</div>
+                <div class="day muted">29</div><div class="day muted">30</div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div>
+                <div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div>
+                <div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div>
+                <div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day today">24</div><div class="day slots">25<label><input type="radio" name="time" value="July 25, 2026 09:30">09:30</label><label><input type="radio" name="time" value="July 25, 2026 14:30">14:30</label></div><div class="day slots">26<label><input type="radio" name="time" value="July 26, 2026 09:30">09:30</label><label><input type="radio" name="time" value="July 26, 2026 14:30">14:30</label></div>
+                <div class="day slots">27<label><input type="radio" name="time" value="July 27, 2026 09:30">09:30</label><label><input type="radio" name="time" value="July 27, 2026 14:30">14:30</label></div><div class="day slots">28<label><input type="radio" name="time" value="July 28, 2026 09:30">09:30</label><label><input type="radio" name="time" value="July 28, 2026 14:30">14:30</label></div><div class="day slots">29<label><input type="radio" name="time" value="July 29, 2026 09:30">09:30</label><label><input type="radio" name="time" value="July 29, 2026 14:30">14:30</label></div><div class="day closed">30<span>Closed</span></div><div class="day slots">31<label><input type="radio" name="time" value="July 31, 2026 09:30">09:30</label><label><input type="radio" name="time" value="July 31, 2026 14:30">14:30</label></div><div class="day muted slots">1<label><input type="radio" name="time" value="August 1, 2026 09:30">09:30</label><label><input type="radio" name="time" value="August 1, 2026 14:30">14:30</label></div><div class="day muted slots">2<label><input type="radio" name="time" value="August 2, 2026 09:30">09:30</label><label><input type="radio" name="time" value="August 2, 2026 14:30">14:30</label></div>
+                <div class="day muted slots">3<label><input type="radio" name="time" value="August 3, 2026 09:30">09:30</label><label><input type="radio" name="time" value="August 3, 2026 14:30">14:30</label></div><div class="day muted slots">4<label><input type="radio" name="time" value="August 4, 2026 09:30">09:30</label><label><input type="radio" name="time" value="August 4, 2026 14:30">14:30</label></div><div class="day muted slots">5<label><input type="radio" name="time" value="August 5, 2026 09:30">09:30</label><label><input type="radio" name="time" value="August 5, 2026 14:30">14:30</label></div><div class="day muted closed">6<span>Closed</span></div><div class="day muted slots">7<label><input type="radio" name="time" value="August 7, 2026 09:30">09:30</label><label><input type="radio" name="time" value="August 7, 2026 14:30">14:30</label></div><div class="day muted slots">8<label><input type="radio" name="time" value="August 8, 2026 09:30">09:30</label><label><input type="radio" name="time" value="August 8, 2026 14:30">14:30</label></div><div class="day muted slots">9<label><input type="radio" name="time" value="August 9, 2026 09:30">09:30</label><label><input type="radio" name="time" value="August 9, 2026 14:30">14:30</label></div>
+              </div>
+            </div>
+
+            <div class="cancel-notice">
+              <p>If a cancellation occurs during your selected period, we will notify you by LINE or email.</p>
+              <button type="button">Receive cancellation notifications</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section03">
+          <div class="section-label"><div class="inner">Ring details</div></div>
+          <div class="inner">
+            <button class="toggle-detail" type="button" aria-expanded="false">Enter detailed ring preferences (optional)</button>
+            <div class="ring-detail" id="ringDetail" hidden>
+              <p class="detail-note">Changes can be made on the day. Please select what you are currently considering.</p>
+              <div class="ring-block">
+                <h2>Wedding ring (first ring)</h2>
+                <div class="detail-grid" data-ring="man"></div>
+              </div>
+              <div class="ring-block">
+                <h2>Wedding ring (second ring)</h2>
+                <div class="detail-grid" data-ring="woman"></div>
+              </div>
+              <div class="ring-block">
+                <h2>Engagement ring</h2>
+                <div class="detail-grid" data-ring="engage"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section04">
+          <div class="section-label"><div class="inner">Customer information</div></div>
+          <div class="inner form-grid">
+            <div class="field"><label class="label"><span class="tag required">Required</span> Name</label><input type="text" name="name" placeholder="Example: Choko Kamakura"></div>
+            <div class="field"><label class="label"><span class="tag required">Required</span> Name reading</label><input type="text" name="name_kana" placeholder="Example: Choko Kamakura"></div>
+            <div class="field"><label class="label"><span class="tag required">Required</span> Phone number</label><input type="tel" name="tel" placeholder="Example: 09012341234, numbers only"></div>
+            <div class="field"><label class="label"><span class="tag required">Required</span> Email address</label><input type="email" name="email" placeholder="Please check for typing errors"></div>
+            <div class="field">
+              <label class="label"><span class="tag required">Required</span> Number of people making or purchasing jewelry</label>
+              <select name="person">
+                <option>Select</option>
+                <option>1 person</option>
+                <option>2 people</option>
+                <option>3 or more people (seats may not be available depending on availability)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="label"><span class="tag optional">Optional</span> Number of accompanying guests</label>
+              <p class="field-help">Select this if someone will visit but will not make or purchase jewelry, such as a child or photographer.</p>
+              <select name="companion">
+                <option>Select</option>
+                <option>1 guest (for 2 or more, please ask in the comments field below)</option>
+              </select>
+            </div>
+            <div class="companion-area">
+              <h2>Companion contact information (optional)</h2>
+              <div class="companion-grid">
+                <input type="text" placeholder="Companion 1 name">
+                <input type="text" placeholder="Companion 1 name reading">
+                <input type="text" placeholder="Companion 1 phone number">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label"><span class="tag required">Required</span> Have you previously booked a course with us?</label>
+              <p class="field-help">If you have booked more than one, select the most recent course.</p>
+              <select name="reserved_course_id">
+                <option>Select</option>
+                <option selected>This is my first time</option>
+                <option>Handmade Wedding and Engagement Ring Course (3 rings)</option>
+                <option>Handmade Wedding Ring Course</option>
+                <option>Handmade Engagement Ring Course</option>
+                <option>Diamond Proposal Course</option>
+                <option>Handmade Pair Ring Course</option>
+                <option>Premium Ring (K10 Gold) Course</option>
+                <option>Handmade Silver Ring Course</option>
+                <option>Handmade Silver Charm Course</option>
+                <option>Wedding and Engagement Ring Consultation</option>
+              </select>
+            </div>
+            <fieldset class="radio-field">
+              <legend><span class="tag optional">Optional</span> Visiting with a wheelchair or stroller</legend>
+              <label><input type="radio" name="wheelchair" value="yes"> Yes</label>
+              <label><input type="radio" name="wheelchair" value="no"> No</label>
+            </fieldset>
+            <div class="field">
+              <label class="label"><span class="tag optional">Optional</span> Other requests</label>
+              <p class="field-help">If you will bring a preschool child, please let us know here.</p>
+              <textarea name="note" rows="5" placeholder="Please enter any requests freely."></textarea>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section05">
+          <div class="section-label"><div class="inner">Notes from Kamakura Chokin Kobo</div></div>
+          <div class="inner">
+            <div class="reserve-notice">
+              <p>&bull; If you use a mobile carrier email address, please adjust your settings so that you can receive emails from info@kamakura-chokin.com.</p>
+              <p>&bull; Please cancel your reservation via our website or by phone at least one week before your reservation date. If you cancel without contacting us, a cancellation fee may apply.</p>
+              <p>&bull; If you will be late, please call us in advance. Depending on your arrival time and the reservation schedule, we may ask you to change your reservation date.</p>
+              <p>&bull; Pt900 platinum and K18 gold rings in widths of 4.0 mm or more are special-order items. Due to material availability, please consult with us at least four weeks in advance.</p>
+              <p>&bull; Payment is made on the day by cash, credit card (VISA, MasterCard, JCB, AMEX, Diners Club, etc.), electronic money, or QR code payment.</p>
+              <p>&bull; After your reservation is completed, an automatic confirmation email will be sent to the email address you entered. If you do not receive the email within 24 hours, your reservation may not have been processed normally. Please contact us by phone.</p>
+              <p>&bull; For ring pickup or aftercare visits, advance booking helps us guide you smoothly.</p>
+              <p>&bull; Please read our privacy policy before booking.</p>
+            </div>
+
+            <div class="language-risk">
+              <strong>Please read before submitting your reservation.</strong>
+              <p>Our staff members are not fluent English speakers. We plan to guide you using translation devices.</p>
+              <p>Reservation emails may be sent in Japanese. Please use your own translation app if needed.</p>
+            </div>
+
+            <label class="privacy"><input type="checkbox"> I agree to the privacy policy.</label>
+            <button class="submit-button" type="button">Proceed to confirmation screen</button>
+            <p class="submit-note" id="submitNote" aria-live="polite"></p>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <p>Copyright (c) Kamakura Chokin Kobo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
