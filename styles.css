@@ -197,59 +197,6 @@ h1 {
   border: 5px solid #a99186;
 }
 
-.shop-kuramae {
-  margin-top: 44px;
-  border-color: var(--green);
-  overflow: visible;
-}
-
-.campaign-ribbon {
-  position: absolute;
-  left: -16px;
-  right: -16px;
-  top: -43px;
-  min-height: 36px;
-  padding: 5px 18px;
-  background: var(--green);
-  color: #fff;
-  font-family: var(--font-serif);
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.campaign-case {
-  position: absolute;
-  top: -9px;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 250px;
-  padding: 1px 12px;
-  border: 1px solid var(--green);
-  border-radius: 999px;
-  background: #fff;
-  color: var(--green-dark);
-  font-size: 13px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.campaign-period {
-  position: absolute;
-  left: 16px;
-  right: 16px;
-  top: 8px;
-  color: var(--green-dark);
-  font-size: 12px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.shop-kuramae .shop-image,
-.shop-kuramae .shop-info {
-  margin-top: 34px;
-}
-
 .form-grid {
   display: grid;
   gap: 24px;
@@ -590,21 +537,6 @@ textarea {
     right: 12px;
     width: 25px;
     height: 25px;
-  }
-
-  .campaign-ribbon {
-    left: -8px;
-    right: -8px;
-    font-size: 16px;
-  }
-
-  .campaign-case {
-    min-width: 210px;
-    font-size: 12px;
-  }
-
-  .campaign-period {
-    font-size: 10px;
   }
 
   .detail-grid {
