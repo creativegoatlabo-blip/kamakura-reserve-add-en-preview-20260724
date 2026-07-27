@@ -19,6 +19,16 @@
       </a>
     </header>
 
+    <div class="time-modal" id="timeModal" role="dialog" aria-modal="true" aria-labelledby="timeModalDate" hidden>
+      <button class="modal-overlay" type="button" data-close-time aria-label="Close time selection"></button>
+      <div class="time-modal-card">
+        <button class="modal-close" type="button" data-close-time>Close</button>
+        <div class="modal-date" id="timeModalDate"></div>
+        <div class="modal-description">Select a time.</div>
+        <div class="time-options" id="timeOptions"></div>
+      </div>
+    </div>
+
     <main class="page-reserves">
       <div class="inner">
         <div class="page-header">
@@ -130,7 +140,7 @@
           </div>
         </section>
 
-        <section class="section section03">
+        <section class="section section03" id="section03">
           <div class="section-label"><div class="inner">Ring details</div></div>
           <div class="inner">
             <button class="toggle-detail" type="button" aria-expanded="false">Enter detailed ring preferences (optional)</button>
@@ -147,6 +157,16 @@
               <div class="ring-block">
                 <h2>Engagement ring</h2>
                 <div class="detail-grid" data-ring="engage"></div>
+              </div>
+              <div class="ring-block baby-ring">
+                <h2>Baby ring</h2>
+                <p class="detail-note">You can also make a small ring as a keepsake for a birth or first birthday.</p>
+                <fieldset class="radio-field baby-choice">
+                  <legend><span class="tag optional">Optional</span> Baby ring production</legend>
+                  <label><input type="radio" name="is_baby" value="no" checked> I do not want to make one</label>
+                  <label><input type="radio" name="is_baby" value="yes"> I want to make one</label>
+                </fieldset>
+                <div class="detail-grid baby-detail" id="babyDetail" data-ring="baby" hidden></div>
               </div>
             </div>
           </div>
